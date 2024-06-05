@@ -26,10 +26,3 @@
     color: white;
     margin-top: 10px;
 }
-
-/* ==== MOBILE VIEW ========== */
-@media (max-width: 600px) {
-    .sidebar {
-        display: none;
-    }
-}
