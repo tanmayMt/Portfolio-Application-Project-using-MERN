@@ -1,15 +1,16 @@
-import React,{useState} from 'react';
-import Home from '../../pages/Home/Home';
-import {AiOutlineDoubleLeft,AiOutlineDoubleRight} from 'react-icons/ai';
+import React, { useState } from "react";
+import Home from "../../pages/Home/Home";
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";
-import Menus from '../Menus/Menus';
-export const Layout = () => {
-    const[toggle,setToggle]=useState(true);
+import Menus from "../Menus/Menus";
 
-      //change toggle
-    const handleToggle = () => {
-      setToggle(!toggle);
-    };
+const Layout = () => {
+  const [toggle, setToggle] = useState(true);
+
+  //change toggle
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
   return (
     <>
       <div className="sidebar-section">
@@ -32,3 +33,5 @@ export const Layout = () => {
     </>
   );
 };
+
+export default Layout;
