@@ -3,11 +3,11 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <div className="about">
+      <div className="about" id="about">
         <div className="row">
           <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
             <img
-              src="https://th.bing.com/th/id/OIP.l7wFjokaGcB5GQ8TkV-hlwHaHK?w=221&h=213&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
               alt="profile_pic"
             />
           </div>
