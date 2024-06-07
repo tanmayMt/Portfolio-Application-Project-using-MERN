@@ -17,7 +17,7 @@ const Menus = ({ toggle }) => {
         <>
           <div className="navbar-profile-pic">
             <img
-              src="https://th.bing.com/th/id/OIP.l7wFjokaGcB5GQ8TkV-hlwHaHK?w=221&h=213&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
               alt="profile pic"
             />
           </div>
@@ -32,24 +32,22 @@ const Menus = ({ toggle }) => {
                 About
               </div>
               <div className="nav-link">
-                <FcPortraitMode />
-                Work Experince
+                <FcReadingEbook />
+                Education
               </div>
+
               <div className="nav-link">
                 <FcBiotech />
                 Tech Stack
               </div>
-              <div className="nav-link">
-                <FcReadingEbook />
-                Education
-              </div>
+
               <div className="nav-link">
                 <FcVideoProjector />
                 Projects
               </div>
               <div className="nav-link">
-                <FcVoicePresentation />
-                Testimonial
+                <FcPortraitMode />
+                Work Experince
               </div>
               <div className="nav-link">
                 <FcBusinessContact />
@@ -69,19 +67,18 @@ const Menus = ({ toggle }) => {
                 <FcAbout />
               </div>
               <div className="nav-link">
-                <FcPortraitMode />
+                <FcReadingEbook />
               </div>
+
               <div className="nav-link">
                 <FcBiotech />
               </div>
-              <div className="nav-link">
-                <FcReadingEbook />
-              </div>
+
               <div className="nav-link">
                 <FcVideoProjector />
               </div>
               <div className="nav-link">
-                <FcVoicePresentation />
+                <FcPortraitMode />
               </div>
               <div className="nav-link">
                 <FcBusinessContact />
