@@ -4,6 +4,8 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docs/resume.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
+import Fade from "react-reveal/Fade";
+
 const Home = () => {
   const [theme, setTheme] = useTheme();
   //handle theme
@@ -21,6 +23,7 @@ const Home = () => {
           )}
         </div>
         <div className="container home-content">
+         <Fade right>
           <h2>Hi 👋 I'm a</h2>
           <h1>
             <Typewriter
@@ -35,12 +38,15 @@ const Home = () => {
               }}
             />
           </h1>
+         </Fade>
+         <Fade button>
           <div className="home-buttons">
             <button className="btn btn-hire">Hire Me</button>
             <a className="btn btn-cv" href={Resume} download="your_name.pdf">
               My Resume
             </a>
           </div>
+         </Fade>
         </div>
       </div>
     </>

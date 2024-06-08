@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Education.css";
+import Fade from "react-reveal/Fade";
 const Education = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Education = () => {
         </h2>
         <hr />
         <VerticalTimeline>
+         <Fade left>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "black" }}
@@ -28,6 +30,8 @@ const Education = () => {
               MAKAUT, WB, INDIA
             </h4>
           </VerticalTimelineElement>
+         </Fade>
+         <Fade right>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "black" }}
@@ -41,6 +45,7 @@ const Education = () => {
               Burdwan University, WB, INDIA
             </h4>
           </VerticalTimelineElement>
+         </Fade>
         </VerticalTimeline>
       </div>
     </>
