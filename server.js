@@ -13,10 +13,10 @@ app.use(cors());
 app.use(express.json());
 
 //routes
-//app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
-app.get('/',(req,res)=>{
-  res.send('<h1>Welcome To Node Server</h1>')
-})
+app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
+// app.get('/',(req,res)=>{
+//   res.send('<h1>Welcome To Node Server</h1>')
+// })
 
 //port
 const PORT = process.env.PORT || 8080;
