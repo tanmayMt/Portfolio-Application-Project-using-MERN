@@ -23,30 +23,37 @@ const Home = () => {
           )}
         </div>
         <div className="container home-content">
-         <Fade right>
-          <h2>Hi 👋 I'm a</h2>
-          <h1>
-            <Typewriter
-              options={{
-                strings: [
-                  "FullStack Developer!",
-                  "Mern Stack Developer!",
-                  "React native developer!",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
-         </Fade>
-         <Fade button>
-          <div className="home-buttons">
-            <button className="btn btn-hire">Hire Me</button>
-            <a className="btn btn-cv" href={Resume} download="your_name.pdf">
-              My Resume
-            </a>
-          </div>
-         </Fade>
+          <Fade right>
+            <h2>Hi 👋 I'm a</h2>
+            <h1>
+              <Typewriter
+                options={{
+                  strings: [
+                    "FullStack Developer!",
+                    "Mern Stack Developer!",
+                    "React native developer!",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+          </Fade>
+          <Fade bottom>
+            <div className="home-buttons">
+              <a
+                className="btn btn-hire"
+                href="https://api.whatsapp.com/send?phone=8768006557"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Hire Me
+              </a>
+              <a className="btn btn-cv" href={Resume} download="your_name.pdf">
+                My Resume
+              </a>
+            </div>
+          </Fade>
         </div>
       </div>
     </>
