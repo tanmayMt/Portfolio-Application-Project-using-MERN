@@ -22,61 +22,60 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2023 - present"
+              date="2023 - Present"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                Full Stack Developer
+                Digital Marketing Executive
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                xyz, pvt ltd
+                Sen Hardware & Plywood, Hooghly, WB
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+                Facebook & E-mail Advertising Campaigns, Mail Chimp, Facebook Pixel, Design Search & Video Campaigns
               </p>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "#1e1e2c" }}
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2020 - 2022"
+              date="2022 - 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                Full Stack Developer
+                Presentation Designer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                xyz, pvt ltd
+                Techno Public School, Bardhaman, WB
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+                Presentation Design, Adobe Photoshop, Adobe InDesign, Content Writing, Print Design
               </p>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "#1e1e2c" }}
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2018 - 2020"
+              date="2020 - 2021"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                Full Stack Developer
+                Product Listing Associate
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                xyz, pvt ltd
+                Arnob Grocery Store, Hooghly, WB
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+                Microsoft Excel, Keyword Research
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
