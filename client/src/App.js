@@ -7,7 +7,7 @@ import Techstack from "./pages/Techstack/Techstack";
 import WorkExp from "./pages/workExp/WorkExp";
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
-import Tada from "react-reveal/Tada";
+import { motion } from "framer-motion";
 import MobileNav from "./components/MobileNav/MobileNav";
 function App() {
   const [theme] = useTheme();
@@ -25,9 +25,12 @@ function App() {
           <Contact />
         </div>
         <div className="footer pb-3 ms-3">
-         <Tada>
+         <motion.h1 
+         animate={{ scale: [1, 1.2, 1] }} 
+         transition={{ duration: 0.5 }}
+        >
           <h4 className="text-center">Made With 😍 Tanmay &copy; 2023</h4>
-         </Tada>
+         </motion.h1>
         </div>
       </div>
 

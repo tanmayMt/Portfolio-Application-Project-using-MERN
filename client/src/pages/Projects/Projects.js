@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
-import Spin from "react-reveal/Spin";
+// import Spin from "react-reveal/Spin";
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <>
@@ -14,7 +15,7 @@ I have worked on many important projects throughout my career. What’s really c
         </p>
         {/* card design */}
         <div className="row" id="ads">
-         <Spin>
+
           <div className="col-md-4">
             <div className="card rounded">
               <div className="card-image">
@@ -74,7 +75,12 @@ Medicine Store Project</h6>
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <motion.div
+             initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
+             animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
+             transition={{ duration: 1, ease: "easeInOut" }} // Smooth rotation effect
+             className="col-md-4"
+          >
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
@@ -98,8 +104,7 @@ Medicine Store Project</h6>
                 </a>
               </div>
             </div>
-          </div>
-         </Spin>
+          </motion.div>
         </div>
       </div>
     </>

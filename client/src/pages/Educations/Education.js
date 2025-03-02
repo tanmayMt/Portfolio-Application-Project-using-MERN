@@ -6,7 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Education.css";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
+// import Fade from "react-reveal/Fade";
 const Education = () => {
   return (
     <>
@@ -16,7 +17,11 @@ const Education = () => {
         </h2>
         <hr />
         <VerticalTimeline>
-         <Fade left>
+         <motion.div
+           initial={{ x: -50, opacity: 0 }} // Starts from the left and is hidden
+           animate={{ x: 0, opacity: 1 }} // Moves to normal position and becomes visible
+           transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "black" }}
@@ -30,8 +35,12 @@ const Education = () => {
               MAKAUT, WB, INDIA
             </h4>
           </VerticalTimelineElement>
-         </Fade>
-         <Fade right>
+         </motion.div>
+         <motion.div
+           initial={{ x: 50, opacity: 0 }} // Starts from the right and is hidden
+           animate={{ x: 0, opacity: 1 }} // Moves to normal position and becomes visible
+           transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "black" }}
@@ -45,7 +54,7 @@ const Education = () => {
               Burdwan University, WB, INDIA
             </h4>
           </VerticalTimelineElement>
-         </Fade>
+         </motion.div>
         </VerticalTimeline>
       </div>
     </>

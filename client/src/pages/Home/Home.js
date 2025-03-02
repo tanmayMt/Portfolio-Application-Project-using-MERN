@@ -4,7 +4,8 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../assets/docs/resume.pdf";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [theme, setTheme] = useTheme();
@@ -23,7 +24,11 @@ const Home = () => {
           )}
         </div>
         <div className="container home-content">
-          <Fade right>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }} // Start slightly to the right and invisible
+            animate={{ x: 0, opacity: 1 }} // Move to normal position and become visible
+            transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+          >
             <h2>Hi 👋 I'm a</h2>
             <h1>
               <Typewriter
@@ -39,8 +44,12 @@ const Home = () => {
                 }}
               />
             </h1>
-          </Fade>
-          <Fade bottom>
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }} // Start slightly below and hidden
+            animate={{ y: 0, opacity: 1 }} // Move to normal position and become visible
+            transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+          >
             <div className="home-buttons">
               <a
                 className="btn btn-hire"
@@ -54,7 +63,7 @@ const Home = () => {
                 My Resume
               </a>
             </div>
-          </Fade>
+          </motion.div>
         </div>
       </div>
     </>
