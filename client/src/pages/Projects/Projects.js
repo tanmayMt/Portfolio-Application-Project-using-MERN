@@ -15,8 +15,94 @@ I have worked on many important projects throughout my career. What’s really c
         </p>
         {/* card design */}
         <div className="row" id="ads">
-
-          <div className="col-md-4">
+          <motion.div 
+             initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
+             animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
+             transition={{ duration: 1, ease: "easeInOut" }} // Smooth rotation effect
+             className="col-md-4"
+          >
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Full stack</span>
+                <img
+                  src="https://th.bing.com/th/id/OIP.jC32b8XWLW4RG-ym_XvtfgHaDt?w=350&h=175&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                  alt="project1"
+                />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">Node</span>
+                <span className="card-detail-badge">Express</span>
+                <span className="card-detail-badge">ReactJs</span>
+                <span className="card-detail-badge">Mongodb</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h6 className="text-uppercase">
+                    Medicine Store System
+                  </h6>
+                </div>
+                <a
+                  className="ad-btn"
+                  href="https://client-iota-liard.vercel.app"
+                >
+                  View Live Website
+                </a>
+                <a
+                  className="ad-btn"
+                  href="https://github.com/tanmayMt/Tour-Booking-Project-using-MERN"
+                >
+                  View
+                </a>                
+              </div>
+            </div>
+          </motion.div>
+          <motion.div 
+             initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
+             animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
+             transition={{ duration: 1, ease: "easeInOut" }} // Smooth rotation effect
+             className="col-md-4"
+          >
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Full stack</span>
+                <img
+                  src="https://th.bing.com/th/id/OIP.qSIY-u4KwSfS42DWKmM4RgAAAA?w=266&h=177&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                  alt="project1"
+                />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">Node</span>
+                <span className="card-detail-badge">Express</span>
+                <span className="card-detail-badge">react</span>
+                <span className="card-detail-badge">Mongodb</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h6 className="text-uppercase">
+                    Doctor Appointment System
+                  </h6>
+                </div>
+                <a
+                  className="ad-btn"
+                  href="https://client-henna-iota-93.vercel.app"
+                >
+                  View Live Website
+                </a>
+                <a
+                  className="ad-btn"
+                  href="https://github.com/tanmayMt/Tour-Booking-Project-using-MERN"
+                >
+                  View
+                </a>                
+              </div>
+            </div>
+          </motion.div>          
+          <motion.div 
+             initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
+             animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
+             transition={{ duration: 1, ease: "easeInOut" }} // Smooth rotation effect
+             className="col-md-4"
+          >
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
@@ -45,8 +131,13 @@ I have worked on many important projects throughout my career. What’s really c
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col-md-4">
+          </motion.div>
+          <motion.div 
+             initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
+             animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
+             transition={{ duration: 1, ease: "easeInOut" }} // Smooth rotation effect
+             className="col-md-4"
+          >
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Full stack</span>
@@ -74,7 +165,7 @@ Medicine Store Project</h6>
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           <motion.div
              initial={{ rotate: 0, opacity: 0 }} // Starts with no rotation and invisible
              animate={{ rotate: 360, opacity: 1 }} // Spins to 360 degrees and becomes visible
